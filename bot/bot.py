@@ -45,7 +45,7 @@ HELP_MESSAGE = """Команды
 ⚪ /mode - Выбор режима чата
 ⚪ /settings - Показать настройки
 ⚪ /balance - Показать баланс
-⚪/help – Помощь 
+⚪/help – Помощь
 
 🎨 Генерация изображений по текстовым подсказкам в <b>👩‍🎨 Артист</b> /mode
 👥 Добавить бота в <b>групповой чат</b>: /help_group_chat
@@ -340,7 +340,7 @@ async def voice_message_handle(update: Update, context: CallbackContext):
 
     voice = update.message.voice
     voice_file = await context.bot.get_file(voice.file_id)
-    
+
     # store file in memory, not on disk
     buf = io.BytesIO()
     await voice_file.download_to_memory(buf)

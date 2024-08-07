@@ -1,5 +1,5 @@
 #available_text_models: ["gpt-3.5-turbo", "gpt-3.5-turbo-16k", "gpt-4-1106-preview", "gpt-4", "text-davinci-003"]
-available_text_models: ["gpt-3.5-turbo-16k", "gpt-4-1106-preview"]
+available_text_models: ["gpt-4o-mini", "gpt-4o"]
 info:
   gpt-3.5-turbo:
     type: chat_completion
@@ -25,20 +25,33 @@ info:
     scores:
       Умный: 3
       Быстрый: 5
-      Дешевый: 3
+      Дешевый: 4
 
-  gpt-4:
+  gpt-4o:
     type: chat_completion
-    name: GPT-4
-    description: GPT-4 - это <b>самая умная</b> и передовая модель в мире. Но она медленнее и не так эффективна по стоимости, как ChatGPT. Лучший выбор для <b>сложных</b> интеллектуальных задач.
+    name: GPT-4o
+    description: GPT-4o - это <b>самая умная</b> и передовая модель в мире. Она <b>быстрая</b> и <b>недорогая</b>. Идеальна для <b>сложных</b> интеллектуальных задач.
 
-    price_per_1000_input_tokens: 0.03
-    price_per_1000_output_tokens: 0.06
+    price_per_1000_input_tokens: 0.015
+    price_per_1000_output_tokens: 0.03
 
     scores:
       Умный: 5
-      Быстрый: 2
-      Дешевый: 2
+      Быстрый: 5
+      Дешевый: 3
+
+  gpt-4o-mini:
+    type: chat_completion
+    name: GPT-4o Mini
+    description: GPT-4o Mini - это облегченная версия GPT-4o. Она <b>быстрее</b> и <b>дешевле</b>, но немного уступает в возможностях полной версии.
+
+    price_per_1000_input_tokens: 0.0001
+    price_per_1000_output_tokens: 0.0002
+
+    scores:
+      Умный: 4
+      Быстрый: 5
+      Дешевый: 5
 
   gpt-4-1106-preview:
     type: chat_completion
